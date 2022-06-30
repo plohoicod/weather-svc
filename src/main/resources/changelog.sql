@@ -18,3 +18,10 @@ CREATE TABLE IF NOT EXISTS users (
 
 --rollback drop table logs;
 --rollback drop table users;
+
+
+--changeset epolivtsev:2
+
+
+insert into users (city)
+values ('kazan'), ('moscow'), ('spb');
